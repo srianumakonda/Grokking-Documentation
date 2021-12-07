@@ -5,7 +5,7 @@ I recently read Grokking Algorithms: An Illustrated Guide for Programmers and Ot
 
 `sign in to GitHub <https://github.com/login>`_
 
-Quick TLDR; on who I am: `I'm a 15yo<http://srianumakonda.com>` _ (at the time of writing this) self-driving car enigneer, <a href="https://twitter.com/srianumakonda/status/1393649008409813003">one of the youngest in the world.</a> Am super fascinated by self-driving and how we can create a generalized, end2end model, capable of having robust preformance fully through Computer Vision. Recently built DataGAN
+Quick TLDR; on who I am: `I'm a 15yo <http://srianumakonda.com>`_ (at the time of writing this) self-driving car enigneer, <a href="https://twitter.com/srianumakonda/status/1393649008409813003">one of the youngest in the world.</a> Am super fascinated by self-driving and how we can create a generalized, end2end model, capable of having robust preformance fully through Computer Vision. Recently built DataGAN
 
 Now: currently buidling a fully e2e mdoel through Computer Vision. Here's my repo for code + current progress. Here's a tweet showing self-driving in steering (take a look below!)  
 
