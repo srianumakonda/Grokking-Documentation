@@ -24,5 +24,7 @@ Contents
 
 .. toctree::
 
+   binary_search
+   running_time
    usage
    api
