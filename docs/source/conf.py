@@ -2,9 +2,11 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People '
+copyright = '2021, Anumakonda'
+author = 'Sri Anumakonda'
+
+master_doc = 'index'
 
 release = '0.1'
 version = '0.1.0'
