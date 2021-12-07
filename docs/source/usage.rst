@@ -1,4 +1,4 @@
-Usage
+Binary search
 =====
 
 .. _installation:
