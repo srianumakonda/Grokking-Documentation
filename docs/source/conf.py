@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People '
+project = 'Grokking Algorithms'
 copyright = '2021, Anumakonda'
 author = 'Sri Anumakonda'
 
