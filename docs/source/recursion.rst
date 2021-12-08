@@ -7,12 +7,12 @@ It's essentially a function that calls itself:
 .. code-block:: python
    :linenos:
 
-        def look_for_key(box):
-	        for item in box:
-		        if item.is_a_box():
-			   look_for_key(item)
-		        elif item.is_a_key():
-			   print(“found the key!”)
+   def look_for_key(box):
+	   for item in box:
+		if item.is_a_box():
+		    look_for_key(item)
+		elif item.is_a_key():
+		    print(“found the key!”)
 
 
 Recursion is generally used when it makes the existing solution a lot clearer and easier to understand.
