@@ -6,8 +6,9 @@ It's essentially a function that calls itself:
 
 .. code-block:: python
    :linenos:
+   
    def look_for_key(box):
-       for item in box:
+      for item in box:
           if item.is_a_box():
              look_for_key(item)
 	  elif item.is_a_key():
@@ -50,9 +51,9 @@ Recursive functions can also use this call stack as well. A perfect example of t
 .. code-block:: python
    :linenos:
    def fact(x):
-       if x == 1:
+      if x == 1:
           return 1
-       else:
+      else:
           return x * fact(x-1)
 
 >>> fact(5)
