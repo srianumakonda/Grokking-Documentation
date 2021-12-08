@@ -26,5 +26,6 @@ Contents
 
    binary_search
    running_time
-   usage
-   api
+   lists_arrays
+   selection_sort
+
