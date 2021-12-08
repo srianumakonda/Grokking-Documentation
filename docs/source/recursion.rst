@@ -6,13 +6,12 @@ It's essentially a function that calls itself:
 
 .. code-block:: python
    :linenos:
-
    def look_for_key(box):
-	   for item in box:
-		if item.is_a_box():
-		    look_for_key(item)
-		elif item.is_a_key():
-		    print(“found the key!”)
+       for item in box:
+          if item.is_a_box():
+             look_for_key(item)
+	  elif item.is_a_key():
+	     print(“found the key!”)
 
 
 Recursion is generally used when it makes the existing solution a lot clearer and easier to understand.
@@ -50,12 +49,12 @@ Recursive functions can also use this call stack as well. A perfect example of t
 
 .. code-block:: python
    :linenos:
-
    def fact(x):
-	   if x == 1:
-	        return 1
-	   else:
-		return x * fact(x-1)
+       if x == 1:
+          return 1
+       else:
+          return x * fact(x-1)
+
 >>> fact(5)
 120
 
