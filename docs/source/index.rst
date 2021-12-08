@@ -28,4 +28,5 @@ Contents
    running_time
    lists_arrays
    selection_sort
+   recursion
 
