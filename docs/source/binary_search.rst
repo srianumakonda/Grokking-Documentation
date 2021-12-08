@@ -29,6 +29,17 @@ Code
 ----------------			
 
 What does that looks like in code?
+
+.. code-block:: python
+   :linenos:
+   :emphasize-lines: 3,5
+
+   def some_function():
+       interesting = False
+       print 'This line is highlighted.'
+       print 'This one is not...'
+       print '...but this one is.'
+
 def binary_search(list, item):
 	low = 0
 	high = len(list)-1
@@ -42,6 +53,7 @@ def binary_search(list, item):
 		else:
 		  low = mid + 1
 	return None
+
 >>> my_list = [1, 3, 5, 7, 9]
 >>> print(binary_search(my_list, 3)) 
 1
