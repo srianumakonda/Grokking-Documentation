@@ -22,6 +22,8 @@ As featured in: Udacity `[blog] <https://www.udacity.com/blog/2021/04/the-autono
 Contents
 --------
 
+One more thing to note: the digram/italic text will usually be from the textbook itself. I do not take any credit for the amazling illustrations provided!
+
 .. toctree::
 
    binary_search
