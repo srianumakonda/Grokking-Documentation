@@ -19,7 +19,7 @@ Recursion is generally used when it makes the existing solution a lot clearer an
 
 **There is no performance benefit to using recursion!** In fact, loops may sometimes be better for performance.
 
-.. Important:: “Loops may achieve a performance gain for your program. Recursion may achieve a performance gain for your programmer. Choose which is more important in your situation!”
+.. Important:: *“Loops may achieve a performance gain for your program. Recursion may achieve a performance gain for your programmer. Choose which is more important in your situation!”*
 
 
 .. _problem:
@@ -38,7 +38,7 @@ Computers generally use a stack known as the **call stack.** When you call on a 
 
 Now, every time you make a function call, your computer saves the values for all the variables in that "box".
 
-.. Attention:: "When you call a function from another function, the calling function is paused in a partially completed state."
+.. Attention:: *"When you call a function from another function, the calling function is paused in a partially completed state."*
 
 The values of that function are stored in memory but they're instead **put on pause.**
 
@@ -51,10 +51,10 @@ Recursive functions can also use this call stack as well. A perfect example of t
 .. code-block:: python
    :linenos:
    def fact(x):
-      if x == 1:
-          return 1
-      else:
-          return x * fact(x-1)
+        if x == 1:
+            return 1
+        else:
+            return x * fact(x-1)
 
 >>> fact(5)
 120

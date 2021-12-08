@@ -17,7 +17,7 @@ Generally, users are plotted out based on similarity so whenever you get recomme
 The way you figure out the similarity will be through the **features you choose to filter by** (feature extraction). The way we find the distances between two [or more] points can be through the **Euclidian distance** (aka Pythagorean formula):
 
 .. math::
-    $\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}$
+    \sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
 
 With KNNs, there are 2 main things you can do: **classification, and regression.** In this case, above we did classification i.e. classifying genres of similar movies, but regression is super useful as well.
 

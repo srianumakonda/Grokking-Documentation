@@ -8,7 +8,7 @@ They're also super simple to write and usually hit the solution.
 The set-covering problem
 ------------
 
-"Suppose you’re starting a radio show. You want to reach listeners in all 50 states. You have to decide what stations to play on to reach all those listeners. It costs money to be on each station, so you’re trying to minimize the number of stations you play on. You have a list of stations."
+*"Suppose you’re starting a radio show. You want to reach listeners in all 50 states. You have to decide what stations to play on to reach all those listeners. It costs money to be on each station, so you’re trying to minimize the number of stations you play on. You have a list of stations."*
 
 .. figure:: images/30.png
    :align: center

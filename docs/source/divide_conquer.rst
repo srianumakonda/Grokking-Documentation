@@ -6,6 +6,7 @@ Divide and Conquer is generally used in situations where you need to solve a pro
 It can also be known as a **recursive technique** used to solve these problems. Think of D&C like this whole new framework used for solving problems.
 
 Let's say that we have this farm:
+
 .. figure:: images/13.png
    :align: center
 
@@ -29,6 +30,7 @@ So for recap, D&C can be broken down into 2 main steps:
 .. Important:: Remember that D&C isn't a simple algorithm that you can apply to a problem. Instead, it's a framework that you can use to think about a problem.
 
 Here's array summing in recursion:
+
 .. figure:: images/16.png
    :align: center
 

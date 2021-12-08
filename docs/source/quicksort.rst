@@ -7,7 +7,7 @@ Here's what the process looks like:
 
 1. Pick an element from the array. **This is generally known as a pivot.**
 2. From there, you **bin the smaller + larger elements into 2 separate arrays.**
-    1. This overall process is known as **partitioning**
+    a. This overall process is known as **partitioning**
 3. You then run this **recursively until you get sorted arrays** and then you can simply **concatenate everything** and you now have your output.
 
 

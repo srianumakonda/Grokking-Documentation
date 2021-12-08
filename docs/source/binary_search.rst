@@ -20,9 +20,9 @@ Your next range is between 50-100. What's the middle of that? 75. **Too high? Th
 
 63? No. **57? YES!**
 
-You just guessed the number within 7 steps
+You just guessed the number within 7 steps!
 
-.. Attention:: Eliminate half the numbers every time with binary search. For any list of n, binary search will take log_n steps to run in the worst case, whereas simple search will take n steps. 
+.. Important:: *"Eliminate half the numbers every time with binary search. For any list of n, binary search will take log_n steps to run in the worst case, whereas simple search will take n steps."* 
 
 
 Code

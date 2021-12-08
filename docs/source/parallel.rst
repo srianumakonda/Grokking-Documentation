@@ -14,12 +14,6 @@ Why?
 1. Parallelism management - if you have to sort an array of 1,000 items, how do you divide this task among the two cores? Even if you give each core 500 items to sort and then merge them, merging itself takes time.
 2. Load distribution amongst processors - if you have 10 tasks to do, you'd probably give each core 5 tasks. What's the problem? The first core is given the easy tasks whereas the other core gets all the hard tasks. **Now a core stays idle while it could be used to work.**
 
-
-.. figure:: images/44.png
-   :align: center
-
-Let's take a look at examples of parallel algorithms:
-
 MapReduce
 ------------
 

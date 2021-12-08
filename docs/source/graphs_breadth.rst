@@ -6,7 +6,7 @@ Breadth-first search allows you to find **the shortest distance between 2 values
 .. figure:: images/20.png
    :align: center
 
-.. Important:: The problem indicated above is known as a **shortest-path problem** (how can I get from x to y in the fastest way?)**.** The algorithm that we use to solve this? This is **breadth-first search.**
+.. Important:: The problem indicated above is known as a **shortest-path problem** (how can I get from x to y in the fastest way?). The algorithm that we use to solve this? This is **breadth-first search.**
 
 To figure out how we solve the above diagram in the fastest way, there are 2 main steps:
 

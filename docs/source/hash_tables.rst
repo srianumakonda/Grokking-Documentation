@@ -29,7 +29,7 @@ What do you do? **Create a proper hash function that maps the keys evenly throug
 Running time
 ------------
 
-Hash tables run in **O(1) time aka constant time** (which means instantaneously)**.** Your worst case is O(n) time.
+Hash tables run in **O(1) time aka constant time** (which means instantaneously). Your worst case is O(n) time.
 
 .. figure:: images/19.png
    :align: center

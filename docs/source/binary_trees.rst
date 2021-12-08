@@ -8,6 +8,7 @@ For every node, the nodes on the left of it have a lower value while the ones on
 .. figure:: images/42.png
    :align: center
 
+
 So, if I wanted to search for Maggie, I'd follow: **David → Manning → *Maggie*!**
 
 .. Important:: *"Searching for an element in a binary search tree takes O(log n) time on average and O(n) time in the worst case. Searching a sorted array takes O(log n) time in the worst case, so you might think a sorted array is better. But a binary search tree is a lot faster for insertions and deletions on average."*
