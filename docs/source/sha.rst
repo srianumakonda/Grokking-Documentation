@@ -1,13 +1,15 @@
-Diffie-Hellman key exchange
+SHA algorithms
 =====
 
-The DH key exchange solves a problem that's lurking for quite some time now: **How do you encrypt a message so it can only be read by the person you sent the message to?**
+SHA (**Secure hash algorithms**) convert an input to a hash for that string. *Note: hash's are just a short string in this context where the goal is string→string.*
 
-The easiest way to solve this would be to come up with a cipher i.e. a=1, b=2, etc. The main problem here is that **both parties need to agree on the cipher.** 
+SHAs can be used in situations to check the similarity of files, especially in the case of extremely large files.
 
-The benefits?
+.. figure:: images/47.png
+   :align: center
 
-1. **Both parties don't need to know the cipher.**
-2. The encrypted messages are **extremely hard to decode.**
+Remember that this is only **one-way. If someone gets the SHA hash, they can't convert that back into the original string.**
 
-Diffie-Hellman has 2 keys: **a public key and a private key.** Everyone can have your public key but when you want to send a message, you can encrypt it using the public key. **Only the private key can be used to decrypt it.**
+.. Important:: "*SHA is actually a family of algorithms: SHA-0, SHA-1, SHA-2, and SHA-3. As of this writing, SHA-0 and SHA-1 have some weaknesses. If you’re using an SHA algorithm for password hashing, use SHA-2 or SHA-3. The gold standard for password-hashing functions is currently bcrypt (though nothing is foolproof)."* 
+
+The other thing to note that is **even a single change of the character in a sting results in completely different outputs!** In the case that you a locally-sensitive hash function, you can use something like **Simhash.**
