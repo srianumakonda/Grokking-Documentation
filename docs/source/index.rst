@@ -35,5 +35,15 @@ One more thing to note: the digram/italic text will usually be from the textbook
    quicksort
    hash_tables
    graphs_breadth
-   dijkstra.rst
+   dijkstra
+   greedy
+   dynamic
+   knn
+   binary_trees
+   inverted_index
+   fourier
+   parallel
+   bloom_hyper
+   sha
+   diffie
 

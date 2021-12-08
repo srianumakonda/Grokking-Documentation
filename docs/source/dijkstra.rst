@@ -1,73 +1,71 @@
-Lists + Arrays
+Dijkstra's Algorithm
 =====
 
-.. _listsarrays:
+4 main steps:
 
+1. Find the "cheapest" node. This is generally the node that you can get to with the shortest cost
+2. Update the costs of the neighbours of the node.
+3. Repeat this until you've done this for every node in the graph.
+4. Calculate the final path
 
+*"In the last chapter, you used breadth-first search to find the shortest path between two points. Back then, “shortest path” meant the path with the fewest segments. But in Dijkstra’s algorithm, you assign a number or weight to each segment. Then Dijkstra’s algorithm finds the path with the smallest total weight."*
 
-Think of your computer as a giant set of drawers with each drawer having an address.
+Each edge in the graph has a number associated it, **known as weights (**graphs with weights are known as weighted graphs, unweighted for no weights).
 
-Every time you want to store an item in memory, you generally will ask the computer for some space (drawers). It then returns an address where you can store your items. 
+Whenever dealing with unweighted graphs, **breadth-first** works. For weighted ones, **Dijkstra's algorithm.**
 
-The 2 ways we store multiple items right now are **arrays and lists.** 
+Here's an example of trading a **piano book → actual piano:**
 
-Adding items every single time to an array is very difficult. Think of it like the movies: if you sit with your friends and a friend shows up [but there are no spots for them], you have to move everyone to a new row. And what happens if another one shows up? **You have to move again!**
-
-Adding an item to a computer is very slow. The easiest way we solve this is through "holding seats." **Even if you have only 3 seats, you can ask the computer for 10 slots, just in case.**
-
-The main problem with doing something like this is mainly the fact that you have extra slots that you might've asked for but  haven't used. On the other hand, **you might have more than 10 items and would have to move anyway.**
-
-We can solve this through the principle of **Linked Lists.**
-
-Each item stores the address of the next item in the list. A bunch of random random memory addresses are linked together.
-
-.. figure:: images/3.png
+.. figure:: images/25.png
    :align: center
 
-Adding an item to this linked list is quite easy; **you just simply stick it anywhere in the memory and store the address with the previous item. This allows you to never have to move your items**
+.. figure:: images/26.png
+   :align: center
 
-If linked lists are better than arrays (above), what would the purpose of arrays even be?
+We work in **hierarchies.** That means the first section (**parent column)** would be the the book as **that's the parent for the poster + rare LP.**
 
-The problem with lists
+What are the trades he needs to make?
+
+.. figure:: images/27.png
+   :align: center
+
+We can also use **negative signs** when we want to show situations **where we get something back** (ex. I get paid back $7 for getting some item).
+
+The only concern? **Dijkstra's algorithm doesn't support negative weights.**
+
+What do we do? **Use the Bellman-Ford algorithm** (outside scope of this guide).
+
+.. figure:: images/27.png
+   :align: center
+
+What the algorithm looks like?
+
+.. figure:: images/28.png
+   :align: center
+
+In code
 ------------
 
-The problem with linked lists is that, "***if you're going to keep jumpig around, linked lists are terrible. Why? If I wanted to get to the last item in a linked list, I have to go through EVERY SINGLE ITEM because that's what gives me the address to get to the next item."***
+.. code-block:: python
+   :linenos:
+   def find_lowest_cost_node(costs):
+	lowest_cost = float(“inf”)
+	lowest_cost_node = None
+	for node in costs:
+		cost = costs[node]
+		if cost < lowest_cost and node not in processed:
+			lowest_cost = cost
+			lowest_cost_node = node
+	return lowest_cost_node
 
-Arrays are different. You actually are given the address for every single item in the array.
-
-In this case, you'd use an array when you want to **read random elements because you can look up any element in the array.**
-
-.. figure:: images/4.png
-   :align: center
-
-Why does it take O(n) time to insert an element into an array?
-
-Insertion
-------------
-
-Generally with lists, insertion is quite easy. You just simply change the address the previous element points to.
-
-.. figure:: images/5.png
-   :align: center
-
-But in the case of an array, you need to shift all the elements down.
-
-.. figure:: images/6.png
-   :align: center
-
-**Verdict: lists are generally better when it comes to inserting elements into the middle.**
-
-Deletion
-------------
-**Again, lists are better.** You simply just change what the previous element points to while with arrays, everything needs to be moved up when you delete the element.
-
-.. figure:: images/7.png
-   :align: center
-
-Arrays vs lists?
-------------
-
-Arrays are generally used more because they can allow for **random access**. 
-
-We generally have 2 types of access: **random access** and **sequential** [one by one] **access.** Linked lists can only do sequential access while random allows you to jump directly to your desired element.
-
+   node = find_lowest_cost_node(costs)
+   while node is not None:
+	cost = costs[node]
+	neighbors = graph[node]
+	for n in neighbors.keys():
+		new_cost = cost + neighbors[n]
+		if costs[n] > new_cost: #we want to reduce + lower the cost
+			costs[n] = new_cost
+			parents[n] = node
+	processed.append(node)
+   node = find_lowest_cost_node(costs)
