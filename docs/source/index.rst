@@ -31,4 +31,9 @@ One more thing to note: the digram/italic text will usually be from the textbook
    lists_arrays
    selection_sort
    recursion
+   divide_conquer
+   quicksort
+   hash_tables
+   graphs_breadth
+   dijkstra.rst
 
